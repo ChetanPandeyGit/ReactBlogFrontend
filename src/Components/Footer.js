@@ -2,7 +2,7 @@ import sidearrow from '../Images/side-arrow.png'
 import FooterArticle from "../Components/FooterArticle"
 import SubHeading from "../Components/SubHeading"
 
-function Footer({data}) {
+function Footer({data,handleNavigation}) {
   return (
     <div>
       <SubHeading sub='Latest Stories' />
@@ -10,7 +10,7 @@ function Footer({data}) {
       <div id='footer-article'>
       {data.slice(9,12).map((item, index) => {
         return (<>
-          <FooterArticle  item={item} key={ index} />
+          <FooterArticle  item={item} key={ index}  handleNavigation={handleNavigation}/>
         <hr/></>)
       })}        
       </div>

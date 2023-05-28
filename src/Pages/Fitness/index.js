@@ -59,7 +59,7 @@ function Fitness() {
           })}
         </div>
         <div className='bolly'>
-          <RightBottom data={data} />
+          <RightBottom data={data}  handleNavigation={handleNavigation} />
           <Advertisement />
         </div>
       </div>

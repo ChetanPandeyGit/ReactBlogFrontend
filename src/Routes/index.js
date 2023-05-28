@@ -11,12 +11,14 @@ import Science from '../Pages/Science'
 import PageNotFound from '../Pages/PageNotFound'
 import FitnessDetails from '../Pages/Fitness/FitnessDetails';
 import ScienceDetails from '../Pages/Science/ScienceDetails';
+import HomeDetails from "../Pages/Home/HomeDetails";
 
 
 const RouterComponent = () => {
   return (
     <Routes>
-      <Route index element={ <Home/>} />
+      <Route path='/' element={ <Home/>} />
+      <Route path='/:id' element={ <HomeDetails/>} />
       <Route path='/bollywood' element={ <Bollywood/>} />
       <Route path='/bollywood/:id' element={ <BollywoodDetails/>} />
       <Route path='/technology' element={ <Technology/>} />
